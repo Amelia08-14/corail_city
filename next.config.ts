@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   // jest-worker par cœur CPU détecté ("spawn ... EAGAIN"). On le force à 1 seul.
   experimental: {
     cpus: 1,
+    // Les workers par défaut (child_process forkés) ne semblent pas hériter de
+    // RAYON_NUM_THREADS sur cet hébergement et plantent (SIGABRT silencieux).
+    // Les worker_threads partagent le même process OS, donc les variables
+    // d'environnement et le quota NPROC du compte sont respectés.
+    workerThreads: true,
   },
   webpack: (config) => {
     // cPanel/CloudLinux (CageFS) virtualise le système de fichiers : la résolution
