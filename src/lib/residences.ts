@@ -772,6 +772,8 @@ export const company = {
   secondaryPhone: "+213 37 50 59 80",
   secondaryPhoneHref: "tel:+21337505980",
   email: "contact@corailcity.com",
+  siteUrl: "https://www.corailcity.com",
+  siteLabel: "www.corailcity.com",
   address: "Cité de l'Aéroport 85/147, 12000 Tébessa, Algérie",
   president: "Nabil Mouici",
   presidentMessage: [

@@ -1,4 +1,11 @@
 export const linkIcons = {
+  globe: (
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M3.5 12h17" />
+      <path d="M12 3.5c2.4 2.3 3.6 5.1 3.6 8.5s-1.2 6.2-3.6 8.5c-2.4-2.3-3.6-5.1-3.6-8.5S9.6 5.8 12 3.5Z" />
+    </svg>
+  ),
   facebook: (
     <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <path d="M15.2 8.2h-1.8c-.9 0-1.6.7-1.6 1.6v2.1h3.3l-.4 2.9h-2.9V21H8.9v-6.2H7V12h1.9V9.5c0-2.1 1.5-3.8 3.9-3.8h2.4v2.5Z" />
