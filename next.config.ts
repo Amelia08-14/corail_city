@@ -12,10 +12,13 @@ const nextConfig: NextConfig = {
     // Les worker_threads partagent le même process OS, donc les variables
     // d'environnement et le quota NPROC du compte sont respectés.
     workerThreads: true,
+    // Par défaut Next lance `tsc --showConfig` dans un processus enfant pour lire
+    // le tsconfig, ce que l'hébergement refuse ("spawn ... EAGAIN"). On utilise
+    // l'API TypeScript en interne, sans processus enfant.
+    useTypeScriptCli: false,
   },
-  // Le typecheck de `next build` lance `tsc` dans un processus enfant, ce que
-  // l'hébergement refuse ("spawn ... EAGAIN"). On le saute au build : le typecheck
-  // se fait en local avec `npx tsc --noEmit` avant chaque déploiement.
+  // On saute aussi le typecheck au build (gourmand en mémoire) : il se fait en
+  // local avec `npx tsc --noEmit` avant chaque déploiement.
   typescript: {
     ignoreBuildErrors: true,
   },
