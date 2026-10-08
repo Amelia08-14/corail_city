@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
     // d'environnement et le quota NPROC du compte sont respectés.
     workerThreads: true,
   },
+  // Le typecheck de `next build` lance `tsc` dans un processus enfant, ce que
+  // l'hébergement refuse ("spawn ... EAGAIN"). On le saute au build : le typecheck
+  // se fait en local avec `npx tsc --noEmit` avant chaque déploiement.
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   webpack: (config) => {
     // cPanel/CloudLinux (CageFS) virtualise le système de fichiers : la résolution
     // des symlinks via realpath() sort de la prison et casse le plugin interne de
