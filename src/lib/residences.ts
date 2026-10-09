@@ -784,7 +784,7 @@ export const company = {
   ],
   socials: {
     instagram: { label: "@sarl.corail.city", href: "https://www.instagram.com/sarl.corail.city" },
-    facebook: { label: "Corail City", href: "https://www.facebook.com/CorailCity" },
+    facebook: { label: "Corail City", href: "https://www.facebook.com/profile.php?id=100086443219217" },
     tiktok: { label: "@corail.city", href: "https://www.tiktok.com/@corail.city" },
     linkedin: { label: "Corail City", href: "https://www.linkedin.com/company/corail-city" },
   },

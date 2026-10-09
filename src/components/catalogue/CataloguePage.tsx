@@ -17,9 +17,10 @@ export const CataloguePage = forwardRef<HTMLDivElement, CataloguePageProps>(func
       <Image
         src={src}
         alt={`Catalogue Corail City, page ${page} sur ${total}`}
-        width={1500}
-        height={1500}
-        sizes="(min-width: 900px) 45vw, 90vw"
+        width={2000}
+        height={2000}
+        quality={85}
+        sizes="(min-width: 1400px) 700px, (min-width: 900px) 50vw, 100vw"
         className="select-none"
         draggable={false}
         priority={page <= 2}

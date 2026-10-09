@@ -112,7 +112,13 @@ export default function LiensPage() {
           <h2 className="mt-3 text-[1.35rem] font-bold uppercase tracking-tight">Coordonnées</h2>
           <div className="mt-1">
             <LinkRow icon="mail" label="E-mail" value={company.email} href={`mailto:${company.email}`} external={false} />
-            <LinkRow icon="phone" label="Fixe" value={company.secondaryPhone} href={company.secondaryPhoneHref} external={false} />
+            <LinkRow
+              icon="document"
+              label="Catalogue"
+              value={`Résidence ${residence.shortName} · ${residence.catalogPages}`}
+              href={`/residences/${residence.slug}/catalogue`}
+              external={false}
+            />
           </div>
         </section>
 

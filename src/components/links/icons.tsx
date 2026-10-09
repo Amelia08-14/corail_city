@@ -43,6 +43,13 @@ export const linkIcons = {
       <path d="m4.3 6.6 7.7 6 7.7-6" />
     </svg>
   ),
+  document: (
+    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M6.5 3.5h7.3l4.7 4.7v11.3a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-15a1 1 0 0 1 1-1Z" />
+      <path d="M13.5 3.7v4.8h4.8" />
+      <path d="M8.8 12.5h6.4M8.8 15.5h6.4" />
+    </svg>
+  ),
   pin: (
     <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <path d="M12 21s6.8-6.1 6.8-11A6.8 6.8 0 0 0 5.2 10c0 4.9 6.8 11 6.8 11Z" />

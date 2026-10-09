@@ -22,6 +22,10 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    // 85 pour les pages du catalogue (plans et textes fins), 75 par défaut ailleurs.
+    qualities: [75, 85],
+  },
   webpack: (config) => {
     // cPanel/CloudLinux (CageFS) virtualise le système de fichiers : la résolution
     // des symlinks via realpath() sort de la prison et casse le plugin interne de
